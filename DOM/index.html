@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>replit</title>
+	  <link href="style.css" rel="stylesheet" type="text/css" />
+      <style>
+        h1{
+            font-size: 100px;
+        }
+      </style>
+	</head>
+
+	
+	<body>
+	  <h1>Todo list</h1>
+	  <h4>1. Take class</h4>
+	  <h4>2. Go out to eat</h4>
+	  <div>
+	    <input type="text" placeholder="add your todo here"></input>
+	    <button onclick="addTodo()">Add Todo</button>
+	  </div>
+	  <!-- <script src="script.js"></script> -->
+       <script>
+    //    console.log(document);//gives me full skeleton of my document  <html>....</html>
+
+    //    const inputE1=document.querySelector("input");//gives me the first input tag so in our html first input tag is button
+    //    console.log(inputE1);
+
+    //    const h1Element=document.querySelector("h1");
+    //    console.log(h1Element.innerHTML);//finds first h1 element
+
+    function addTodo(){
+        const inputElement=document.querySelector("input");
+        const value=inputElement.value;
+        console.log(value);
+    }//logs the todo written in input box
+
+    const h=document.querySelectorAll("h4");
+    console.log(h);//logs all the elemnt with h4
+    console.log(h[0]);
+
+
+       </script>
+	</body>
+	
+</html>
