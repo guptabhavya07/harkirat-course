@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <div id="topdiv">
+            hi there
+        </div>
+    </body>
+    <script>
+        const divEl=document.createElement("div");//creates a div in my document,in-memory variable 
+        divEl.innerHTML="hi bhavya";//gives html text to my div
+        const parentEl=document.querySelector("body");//gives me the parent 
+        parentEl.appendChild(divEl);//appends the created div in parent selected
+    </script>
+</html>

@@ -9,17 +9,22 @@
         h1{
             font-size: 100px;
         }
+        #todo1{
+          background-color: red;
+
+        }
       </style>
 	</head>
 
 	
 	<body>
 	  <h1>Todo list</h1>
-	  <h4>1. Take class</h4>
-	  <h4>2. Go out to eat</h4>
+	  <h4 id="todo1">1. Take class</h4>
+	  <h4 id="todo2">2. Go out to eat</h4>
+    <h4 id="todo3">go to gym</h4>
 	  <div>
 	    <input type="text" placeholder="add your todo here"></input>
-	    <button onclick="addTodo()">Add Todo</button>
+	    <button id="btn" onclick="addTodo()">Add Todo</button>
 	  </div>
 	  <!-- <script src="script.js"></script> -->
        <script>
@@ -37,9 +42,21 @@
         console.log(value);
     }//logs the todo written in input box
 
+    //fetching elements:-
     const h=document.querySelectorAll("h4");
     console.log(h);//logs all the elemnt with h4
-    console.log(h[0]);
+    console.log(h[0]);//logs first element
+
+
+    const id1=document.querySelector("#todo1");
+    //or
+    // const id1=document.getElementById("todo1");
+    console.log(id1);
+
+
+    //updatinf elements:-
+    const update=document.querySelectorAll("h4")[1];
+    update.innerHTML="asasasa";
 
 
        </script>

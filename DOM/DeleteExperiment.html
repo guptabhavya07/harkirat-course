@@ -1,0 +1,19 @@
+<!-- //here as button is pressed first todo is removed -->
+
+<html>
+    <body id="body">
+        <h2>Todo 1</h2>
+        <h2>Todo 2</h2>
+        <h2>Todo 3</h2>
+        <button onclick="deleteRandomTodo()">Delete todo!</button>
+    </body>
+    <script>
+        function deleteRandomTodo(){
+            const element=document.querySelector("h2");
+            const parentelement=element.parentNode;
+            //or
+            // const parentelement=document.getElementById("body");
+            parentelement.removeChild(element);
+        }
+    </script>
+</html>
